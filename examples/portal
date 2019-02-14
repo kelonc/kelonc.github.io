@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WebAR</title>
+    <script src="/scripts/aframe.min.js"></script>
+    <script src="/scripts/aframe-ar.js"></script>
+</head>
+    <body>
+        <a-scene >
+            <a-sky color="#ECECEC"></a-sky>
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+            <a-assets>
+                <a-asset-item id="porte-obj" src="portal_obj.obj"></a-asset-item>
+                <a-asset-item id="porte-mtl" src="portal_obj.mtl"></a-asset-item>
+            </a-assets>
+
+
+            <a-entity obj-model="obj:#portal-obj; mtl:#portal-mtl"></a-entity>
+
+
+            <!-- <a-box position='0 0.5 0' material='color: black;'></a-box> -->
+            <!--<a-marker-camera type='pattern' url='pattern-marker.patt'> </a-marker-camera>-->
+            <!--<a-marker-camera preset='hiro'></a-marker-camera>-->
+         </a-scene>
+    </body>
+</html>
