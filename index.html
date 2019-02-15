@@ -12,8 +12,10 @@
     <a-scene>
         <a-assets>
             <img id="sky" src="assets/test_weed.jpg">
+            <a-asset-item id="globe" src="assets/model.gltf"></a-asset-item>
         </a-assets>
         <a-sky id="image-360" radius="10" src="#sky"></a-sky>
+        <a-entity gltf-model="#globe"></a-entity>
         
         
     </a-scene>
