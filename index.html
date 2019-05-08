@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!-- include a-frame -->
-    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-
-</head>
-<!-- start the body of your page -->
-<body style='margin : 0px; overflow: hidden;'>
-   
-    <!-- Define your 3d scene and enabled ar.js -->
-    <a-scene>
-        <a-assets>
-            <img id="sky" src="assets/test_weed.jpg">
-        
-        </a-assets>
-        <a-sky id="image-360" radius="10" src="#sky"></a-sky>
+<html lang="en">
+  <head>
+    <title>WevAR_K</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
     
-        
-        
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    
+ 
+  </head>  
+  <body>
+    
+    <a-scene embedded arjs>
+            
+            
+            <a-assets>
+                  <a-asset-item id="eyeM" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Fyeux.gltf?1556998518498"></a-asset-item>
+                  <a-asset-item id="eye" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_stable.gltf?1556825437311"></a-asset-item>
+                  <a-asset-item id="uplid" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_uplid%202.gltf?1556827525993"></a-asset-item>
+                  <a-asset-item id="dnlid" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_dnlid%202.gltf?1556827525953"></a-asset-item>
+                  <a-asset-item id="bag" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_bag.gltf?1556827533195"></a-asset-item>
+                  <a-asset-item id="apple" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_apple.gltf?1556827599831"></a-asset-item>
+              <!--
+                  <a-asset-item id="bin" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Fyeux0.bin?1556998518884"></a-asset-item>
+                  <a-asset-item id="mtl" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2FtheBDSM5_base_Eye_AlbedoTransparency.png?1556998518520"></a-asset-item>
+                  <a-asset-item id="mtl2" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2FtheBDSM5_base_Eye_Normal-theBDSM5_base_Eye_MetallicSmoothness.png?1556998519666"></a-asset-item>
+                  <a-asset-item id="mtl3" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2FtheBDSM5_base_Eye_Normal.png?1556998519797"></a-asset-item>
+                 --> 
+          </a-assets>
+
+           
+            <a-marker-camera type="pattern" url="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2FimuuARmarker.patt?1556220976302">
+          <!--   <a-entity gltf-model-next="#eyeM" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>-->
+             <a-entity gltf-model="#eye" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
+              <a-entity gltf-model="#uplid" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
+              <a-entity gltf-model="#dnlid" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
+              <a-entity gltf-model="#bag" scale="0.5 0.5 0.5" rotation="-90 0 0"
+                        animation="property: rotation; to: 0 50 0; loop: true; dur: 10000"></a-entity>
+              <a-entity gltf-model="#apple" scale="0.5 0.5 0.5" rotation="-90 0 0" 
+                        animation="property: scale; to: 0 0 0; loop: true; dur: 10000"></a-entity>
+              
+            
+ 
+              <a-entity light="type: hemisphere; color: #00FFFF; groundColor: #FF00FF; intensity: 2"></a-entity>
+              <a-entity light="type: directional; color: #FFF; intensity: 2" position="-1 1 0"></a-entity>
+                
+            </a-marker-camera>
+            
     </a-scene>
-</body>
+    
+  
+  </body>
 </html>
