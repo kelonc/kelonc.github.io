@@ -18,30 +18,20 @@
             
             
             <a-assets>
-                  <a-asset-item id="eyeM" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Fyeux.gltf?1556998518498"></a-asset-item>
-                  <a-asset-item id="eye" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_stable.gltf?1556825437311"></a-asset-item>
-                  <a-asset-item id="uplid" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_uplid%202.gltf?1556827525993"></a-asset-item>
-                  <a-asset-item id="dnlid" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_dnlid%202.gltf?1556827525953"></a-asset-item>
-                  <a-asset-item id="bag" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_bag.gltf?1556827533195"></a-asset-item>
-                  <a-asset-item id="apple" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Feye_apple.gltf?1556827599831"></a-asset-item>
-              <!--
-                  <a-asset-item id="bin" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2Fyeux0.bin?1556998518884"></a-asset-item>
-                  <a-asset-item id="mtl" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2FtheBDSM5_base_Eye_AlbedoTransparency.png?1556998518520"></a-asset-item>
-                  <a-asset-item id="mtl2" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2FtheBDSM5_base_Eye_Normal-theBDSM5_base_Eye_MetallicSmoothness.png?1556998519666"></a-asset-item>
-                  <a-asset-item id="mtl3" src="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2FtheBDSM5_base_Eye_Normal.png?1556998519797"></a-asset-item>
-                 --> 
+                
+                  <a-asset-item id="eye" src="/assets/yeux.gltf"></a-asset-item>
+                  <a-asset-item id="bin" src="/assets/yeux0.bin"></a-asset-item>
+                  <a-asset-item id="mtl" src="/assets/theBDSM5_base_Eye_Normal-theBDSM5_base_Eye_MetallicSmoothness.png"></a-asset-item>
+                  <a-asset-item id="mtl2" src="/assets/theBDSM5_base_Eye_AlbedoTransparency.png"></a-asset-item>
+                  <a-asset-item id="mtl3" src="/assets/theBDSM5_base_Eye_Normal.png"></a-asset-item>
+           
           </a-assets>
 
            
-            <a-marker-camera type="pattern" url="https://cdn.glitch.com/fccd98e7-863b-406a-ac2e-504a3b998e12%2FimuuARmarker.patt?1556220976302">
+            <a-marker-camera type="pattern" src="/assets/imuuARmarker.patt">
           <!--   <a-entity gltf-model-next="#eyeM" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>-->
              <a-entity gltf-model="#eye" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
-              <a-entity gltf-model="#uplid" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
-              <a-entity gltf-model="#dnlid" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
-              <a-entity gltf-model="#bag" scale="0.5 0.5 0.5" rotation="-90 0 0"
-                        animation="property: rotation; to: 0 50 0; loop: true; dur: 10000"></a-entity>
-              <a-entity gltf-model="#apple" scale="0.5 0.5 0.5" rotation="-90 0 0" 
-                        animation="property: scale; to: 0 0 0; loop: true; dur: 10000"></a-entity>
+            
               
             
  
