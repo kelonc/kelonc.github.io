@@ -18,18 +18,16 @@
   </head>
   <body>
     <a-scene>
-      <a-entity id="camera" camera="userHeight: 1.6" look-controls cursor="rayOrigin: mouse"></a-entity>
+      
       
       <a-sky color="#222222"></a-sky>
       
       <a-assets>
-        <a-asset-item id="crate-obj" src="assets/model_obj03.obj"></a-asset-item>
+        <a-asset-item id="GLB" src="assets/cage_pose01_SP_Proj1.glb"></a-asset-item>
       
-      </a-assets>
+        </a-assets>
       
-      <a-obj-model src="#crate-obj" material="shader: flat; color: white" 
-             event-set__enter="_event: mouseenter; color: red"
-             event-set__leave="_event: mouseleave; color: white"></a-obj-model>
+        <a-entity gltf-model="#GLB"></a-entity>
 
     </a-scene>
   </body>
