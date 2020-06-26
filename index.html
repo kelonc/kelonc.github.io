@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!-- include a-frame -->
-    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 
-</head>
-<!-- start the body of your page -->
-<body style='margin : 0px; overflow: hidden;'>
-   
-    <!-- Define your 3d scene and enabled ar.js -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
     <a-scene>
-        
-        <a-sky src="assets/gooood23385.jpg" rotation="0 -45 0"></a-sky>
-        
+     
+      <a-sky color="#111111"></a-sky>
+      
+      <a-assets>
+      <a-asset-item id="crate-obj" src="https://cdn.glitch.com/036f2750-441f-4447-ac79-a6614c383464%2Fmodel_obj01.obj?v=1593143840329"></a-asset-item>
+
+      </a-assets>
+
+      
+      <a-obj-model src="#crate-obj" ></a-obj-model>
+
     </a-scene>
-</body>
+  </body>
 </html>
