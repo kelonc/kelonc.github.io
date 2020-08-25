@@ -18,15 +18,15 @@
   </head>
   <body>
     <a-scene>
-      
-      
-      <a-sky color="#EEEEEE"></a-sky>
-      
-      <a-assets>
+       <a-assets>
         <a-asset-item id="GLB" src="assets/cage_pose01_SP_Proj1.gltf"></a-asset-item>
+        <img id="vrgrid" src="assets/VR_screencap_grid.jpg">
+      </a-assets>
       
-        </a-assets>
+      <a-sky id="image-360" radius="10" src="#vrgrid"></a-sky>
       
+     
+        
         <a-entity gltf-model="#GLB"  position="50 -25 0" scale="100 100 100"></a-entity>
         <a-entity light="color: #AFA; intensity: 10" position="50 0 -30"></a-entity>
     </a-scene>
