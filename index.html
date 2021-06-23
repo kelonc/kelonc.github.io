@@ -19,11 +19,11 @@
   <body>
     <a-scene>
        <a-assets>
-        //<a-asset-item id="GLB" src="assets/cage_pose01_SP_Proj1.gltf"></a-asset-item>
-        <img id="vrgrid" src="assets/VR_screencap_grid.jpg">
+        <a-asset-item id="GLB" src="assets/ring.glb"></a-asset-item>
+        //<img id="vrgrid" src="assets/VR_screencap_grid.jpg">
       </a-assets>
       
-      <a-sky id="image-360" radius="10" src="#vrgrid"></a-sky>
+      <a-entity gltf-model="GLB"></a-sky>
     </a-scene>
   </body>
 </html>
